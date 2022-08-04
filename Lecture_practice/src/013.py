@@ -3,11 +3,14 @@ import os
 import cv2
 from matplotlib import pyplot as plt
 
-IMG_PATH = "C:/Users/LG/Documents/GitHub/ict_2022_2/Lecture_code/day_5th/images"
+# IMG_PATH = "C:/Users/LG/Documents/GitHub/ict_2022_2/Lecture_practice/images"    # 절대경로
+
+filepath = "C:/Users/LG/Documents/GitHub/ict_2022_2/Lecture_practice" 
+IMG_PATH = "./images"                                                           # ../A  <- 상위 폴더 위치에서 <A>폴더 내,   ./A   <- 현재 폴더 위치에서, <A>폴더 내
 
 if __name__ == "__main__":
-    img = cv2.imread(os.path.join(IMG_PATH, "lena.jpeg"))
-
+    img = cv2.imread(os.path.join(filepath, IMG_PATH, "lena.jpeg"))             # 절대 or 상대
+    
     # pyplot를 사용하기 위해서 BGR을 RGB로 변환.
     b, g, r = cv2.split(img)
     img = cv2.merge([r, g, b])

@@ -5,7 +5,7 @@ import numpy as np
 
 
 # IMG_PATH = "../images"
-IMG_PATH = "C:/Users/LG/Documents/GitHub/ict_2022_2/Lecture_code/day_5th/images"
+IMG_PATH = "C:/Users/LG/Documents/GitHub/ict_2022_2/Lecture_practice/images"
 
 if __name__=="__main__":
     img = cv2.imread(os.path.join(IMG_PATH, "logo.png"))

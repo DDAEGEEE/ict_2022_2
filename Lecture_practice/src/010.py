@@ -4,7 +4,7 @@ import os
 import cv2
 from matplotlib import pyplot as plt
 
-IMG_PATH = "C:/Users/LG/Documents/GitHub/ict_2022_2/Lecture_code/day_5th/images"
+IMG_PATH = "C:/Users/LG/Documents/GitHub/ict_2022_2/Lecture_practice/images"
 
 
 def image_hist(image):
