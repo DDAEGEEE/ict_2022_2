@@ -26,3 +26,13 @@ if __name__ == "__main__":
     for i in range(5):
         plt.subplot(3, 2, i + 1), plt.imshow(images[i]), plt.title(titles[i])
         plt.xticks([]), plt.yticks([])
+
+    #    i = 0
+    #   for img, title in zip():
+    #        plt.subplot(3, 2, i + 1)
+    #        plt.imshow(img)
+    #        plt.title(title)
+    #        i = i + 1
+    #        plt.xticks([])
+    #        plt.yticks([])
+    plt.show()
